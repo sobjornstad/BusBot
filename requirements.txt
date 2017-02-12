@@ -1,0 +1,6 @@
+flask
+mock
+gevent
+gunicorn
+twilio
+psycopg2
