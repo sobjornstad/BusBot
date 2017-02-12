@@ -1,7 +1,21 @@
 """
-Flask app that processes requests and keeps track of the user database.
+app.py -- the main Flask app that processes BusBot requests and keeps track of
+the user database. See README.md for documentation.
 
-See README.md for documentation.
+Copyright (c) 2017 Soren Bjornstad <contact@sorenbjornstad.com>.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
 import os
@@ -93,7 +107,7 @@ def is_buscounter(user_info):
     return user_info['iscounter']
 
 def is_superuser(user_info):
-     return user_info['phone'] == SUPERUSER
+    return user_info['phone'] == SUPERUSER
 
 # The superuser may want to have bus counter *privileges* without actually
 # receiving all the notifications destined for bus counters.
